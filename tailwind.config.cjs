@@ -8,13 +8,16 @@ module.exports = {
    ],
    theme: {
       screens: {
-         'mobile': '360px', /* min-width: 360px */
-         'tablet': '768px', /* min-width: 640px */
-         'laptop': '1024px', /* min-width: 1024px */
-         'desktop': '1280px', /* min-width: 1280px */
+         'mobile': '360px',
+         // 'smartphone': '480px',
+         'tablet': '768px',
+         'laptop': '1024px',
+         'desktop': '1280px',
+         'full': '1576px',
       },
       extend: {
          colors: {
+            // Custom colors
             'blue': '#1fb6ff',
             'purple': '#7e5bef',
             'pink': '#ff49db',

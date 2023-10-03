@@ -1,13 +1,42 @@
 @layer components {
+   .app {
+      @apply h-[100dvh] w-full flex flex-col bg-slate-200;
+   }
+
    .container {
-      @apply text-white border-4 border-pink;
+      @apply text-white border-2 bg-black border-pink;
       @apply tablet:bg-purple;
       @apply laptop:bg-yellow;
       @apply desktop:bg-green;
    }
 
+   .header {
+      @apply flex items-center gap-4 text-black bg-amber-200 py-2;
+
+      &__list {
+         @apply flex gap-4;
+      }
+   }
+
+   .main {
+      @apply flex items-start justify-between gap-5;
+   }
+
+   .aside {
+      @apply flex flex-col border-dashed border-2 border-black;
+   }
+
+   .footer {
+      @apply flex items-center gap-4 text-black bg-cyan-200 py-2;
+
+      &__list {
+         @apply flex gap-4;
+      }
+   }
+
    .section {
       @apply bg-gray-dark/90;
+
       &__title {
          @apply text-5xl text-white font-rubik text-center bg-gray p-5 mb-10;
          @apply tablet:text-blue;
