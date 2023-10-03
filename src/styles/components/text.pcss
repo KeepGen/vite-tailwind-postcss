@@ -16,6 +16,14 @@
       &__list {
          @apply flex gap-4;
       }
+
+      &__item {
+         @apply text-black/50;
+      }
+
+      &__link {
+         @apply text-black hover:underline;
+      }
    }
 
    .main {
@@ -35,7 +43,7 @@
    }
 
    .section {
-      @apply bg-gray-dark/90;
+      @apply bg-gray-dark/90 p-2;
 
       &__title {
          @apply text-5xl text-white font-rubik text-center bg-gray p-5 mb-10;
